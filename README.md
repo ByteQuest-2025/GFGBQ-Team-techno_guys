@@ -31,6 +31,7 @@ There is a need for an AI-powered system that can automatically analyze, classif
 
 `https://your-ppt-link.com`  
 (Google Slides / Drive)
+ ok
 
 ## 📖 Project Overview
 
@@ -122,7 +123,7 @@ Backend will run at: <http://localhost:8501>
 - Determines priority level
 - Assigns the relevant department  
 
-4. Admin dashboard displays processed grievances with status and history.
+1. Admin dashboard displays processed grievances with status and history.
 
 ## 📸 Screenshots
 
