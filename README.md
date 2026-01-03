@@ -31,6 +31,7 @@ There is a need for an AI-powered system that can automatically analyze, classif
 
 `https://your-ppt-link.com`  
 (Google Slides / Drive)
+ ok
 
 ## 📖 Project Overview
 
@@ -142,9 +143,7 @@ The application will run at: <http://localhost:8501>
    - Determine the priority level (Critical or Normal) based on keywords
    - Assign it to the relevant department
 
-## 🧠 How It Works
-
-### Model Training (`train_model.py`)
+## 🧠 How It Work
 
 The system uses a machine learning pipeline with:
 - **TF-IDF Vectorizer**: Converts text complaints into numerical features
