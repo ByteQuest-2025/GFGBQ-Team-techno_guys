@@ -1,0 +1,426 @@
+complaint_text,category
+"Water supply has been disrupted in our area for the past 5 days. Please resolve this issue urgently.",Utilities
+"Street lights are not working in sector 12 making it unsafe at night.",Infrastructure
+"Garbage collection has not happened in our locality for 2 weeks. Piles of waste are accumulating.",Sanitation
+"There is a major pothole on the main road causing accidents every day.",Infrastructure
+"No response from electricity department regarding frequent power cuts in our area.",Utilities
+"Stray dogs are creating nuisance and attacked a child yesterday near the hospital.",Public Safety
+"Municipal office staff is rude and not providing proper information about property tax.",Administration
+"Drainage system is clogged causing waterlogging during rains.",Sanitation
+"Government hospital lacks basic medical supplies and staff is insufficient.",Healthcare
+"Road construction work has been abandoned midway for 3 months.",Infrastructure
+"Illegal construction is happening in residential area without proper permissions.",Administration
+"Bus service frequency is very low causing problems for daily commuters.",Infrastructure
+"Public toilet near market is in very poor condition and unhygienic.",Sanitation
+"Emergency ambulance service number is not responding during emergencies.",Healthcare
+"Traffic signals are not functioning properly leading to chaos at intersections.",Public Safety
+"Unauthorized vendors are blocking footpaths making it difficult to walk.",Administration
+"Mosquito menace is increasing due to stagnant water in our colony.",Healthcare
+"Fire safety equipment in community center is outdated and not maintained.",Public Safety
+"Street name boards are missing making it difficult for visitors to navigate.",Administration
+"Public park is not maintained and playground equipment is broken.",Infrastructure
+"Water contamination in our area causing health issues to residents.",Utilities
+"Electricity meters are faulty and showing incorrect readings.",Utilities
+"School building is in dilapidated condition posing risk to students.",Infrastructure
+"Sewer line is broken causing overflow on the main road near hospital causing emergency.",Sanitation
+"Birth certificate application submitted 2 months ago but not processed yet.",Administration
+"Street vendors are using loud speakers beyond permitted hours.",Administration
+"Public library has limited books and poor seating arrangements.",Administration
+"Ration card renewal process is very complicated and time consuming.",Administration
+"Government website for online services is frequently down.",Administration
+"Pension payments are delayed for senior citizens for last 3 months.",Administration
+"No proper security at government office premises leading to theft incidents.",Public Safety
+"Railway crossing gate is often stuck causing traffic jams.",Infrastructure
+"Air pollution levels are very high due to nearby industrial units.",Healthcare
+"Street cleaning is irregular in our sector.",Sanitation
+"Water pressure is very low during peak hours.",Utilities
+"Footpath tiles are broken causing accidents especially for elderly people.",Infrastructure
+"No proper waste segregation system in residential areas.",Sanitation
+"Traffic police not taking action against wrong parking.",Public Safety
+"Community hall booking system is not transparent.",Administration
+"Playground is being encroached by unauthorized persons.",Administration
+"Power transformer near residential area making loud noise causing disturbance.",Utilities
+"No street lights on the highway stretch making it dangerous at night.",Infrastructure
+"Doctor availability at government dispensary is very irregular.",Healthcare
+"Building permission process is unclear and too bureaucratic.",Administration
+"Water tanker supply is insufficient during summer months.",Utilities
+"Roads are full of potholes after monsoon season.",Infrastructure
+"Illegal dumping of construction debris on vacant plots.",Sanitation
+"School admission process is not clear and proper information not available.",Administration
+"Bus stops do not have proper shelter causing inconvenience during rain.",Infrastructure
+"Public drinking water facility is not working at bus station.",Utilities
+"Vaccination drive schedule is not communicated properly to residents.",Healthcare
+"Stray cattle on roads causing traffic problems and danger.",Public Safety
+"Government hospital needs urgent attention as patients are suffering due to emergency.",Healthcare
+"Tree branches falling on power lines during storms causing outages.",Utilities
+"No proper parking facility at government offices.",Infrastructure
+"Sewage treatment plant not functioning properly causing bad smell.",Sanitation
+"Police response time to complaints is very slow.",Public Safety
+"Road widening project is causing major inconvenience to shopkeepers.",Infrastructure
+"Water supply timing is irregular and unpredictable.",Utilities
+"Public transport buses are overcrowded and unsafe.",Infrastructure
+"Unauthorized hoardings are blocking traffic signals and street lights.",Administration
+"Waste collection vehicle comes at irregular times.",Sanitation
+"Electricity bill is showing abnormally high charges without explanation.",Utilities
+"Pedestrian crossing is not marked properly on busy roads.",Public Safety
+"Government school lacks basic infrastructure like toilets and drinking water.",Infrastructure
+"Property tax calculation seems incorrect and needs verification.",Administration
+"Open manholes on roads are very dangerous especially at night.",Infrastructure
+"Water connection application pending for 6 months without any response.",Utilities
+"Fire hydrant in our area is not functional posing serious danger risk.",Public Safety
+"Street dog sterilization program is not being implemented in our locality.",Healthcare
+"Footpath encroachment by shopkeepers forcing pedestrians on roads.",Administration
+"Bus route needs to be extended to newly developed residential areas.",Infrastructure
+"Government clinic timings are not convenient for working people.",Healthcare
+"Road repair work quality is very poor and roads deteriorate quickly.",Infrastructure
+"Rainwater harvesting system in government buildings not maintained.",Utilities
+"No proper signage for government offices making them hard to locate.",Administration
+"Public toilet construction announced but work not started yet.",Sanitation
+"Speed breakers are too high causing damage to vehicles.",Infrastructure
+"Electricity supply interruption notification system not working properly.",Utilities
+"Ambulance stuck in traffic due to no emergency lane on roads near hospital causing life threatening emergency.",Healthcare
+"Government school teachers frequently absent affecting students education.",Administration
+"No wheelchair accessibility at government office buildings.",Infrastructure
+"Water quality testing reports not shared with public.",Utilities
+"Smoke from garbage burning causing respiratory problems to residents.",Sanitation
+"No proper parking enforcement in commercial areas.",Public Safety
+"Community center air conditioning not working in summer.",Administration
+"Trees need urgent trimming as branches are touching power lines creating fire hazard.",Public Safety
+"Government hospital mortuary facilities are inadequate.",Healthcare
+"Road divider damaged at multiple places posing accident risk.",Infrastructure
+"Water tanker mafia charging exorbitant rates during shortage.",Administration
+"Street lights remain on during daytime wasting electricity.",Utilities
+"No proper drainage in low lying areas causing severe waterlogging.",Sanitation
+"Wildlife entering residential areas due to encroachment of forest land.",Public Safety
+"Government office working hours not convenient for working professionals.",Administration
+"Public WiFi facility announced but not yet operational.",Infrastructure
+"Electricity pole tilted dangerously and may fall anytime posing danger.",Utilities
+"No covered waiting area at government hospital outdoor patient department.",Healthcare
+"Road construction debris not cleared blocking drainage system.",Infrastructure
+"Ration shop closed frequently without notice causing problems.",Administration
+"No proper lighting in public parking areas increasing theft risk.",Public Safety
+"Water bill shows charges for sewage connection not yet provided.",Utilities
+"Park maintenance is poor with overgrown grass and broken benches.",Infrastructure
+"No public transport connectivity to hospital making it hard for patients during emergency.",Healthcare
+"Building plan approval taking too long delaying construction.",Administration
+"Sewer gas smell in residential area due to broken pipeline.",Sanitation
+"Traffic congestion during peak hours needs better management.",Public Safety
+"Government quarters maintenance is very poor.",Infrastructure
+"Smart meter installation pending despite multiple requests.",Utilities
+"No proper waste bins in market area.",Sanitation
+"Government school playground being used for parking by outsiders.",Administration
+"Railway under bridge waterlogging during monsoon.",Infrastructure
+"No dedicated lanes for emergency vehicles on highways near hospital causing danger to patients.",Healthcare
+"Public library needs renovation and more facilities.",Administration
+"Noise pollution from construction sites during night hours.",Administration
+"Water connection disconnected without prior notice or explanation.",Utilities
+"Road accident black spot needs immediate attention and safety measures.",Public Safety
+"Government hospital queue management system is inefficient.",Healthcare
+"Footbridge over railway line in poor condition and unsafe.",Infrastructure
+"No action on complaint filed 2 months ago regarding sanitation.",Sanitation
+"Electricity meter reading not done for several months.",Utilities
+"Public toilet near bus stand always locked and not accessible.",Sanitation
+"Speed limit signage missing on accident prone stretches.",Public Safety
+"Government office website information is outdated and misleading.",Administration
+"Tree plantation drive needed in our area to improve air quality.",Healthcare
+"No proper access road to newly developed sectors.",Infrastructure
+"Water pipeline leakage causing wastage and low pressure.",Utilities
+"Garbage segregation awareness program needed in locality.",Sanitation
+"No traffic police deployment during school hours near schools.",Public Safety
+"Government dispensary lacks essential medicines regularly.",Healthcare
+"Building bylaws not being enforced leading to unauthorized construction.",Administration
+"Road marking and zebra crossing faded and not visible.",Infrastructure
+"Electricity department not responding to transformer repair requests.",Utilities
+"Park occupied by anti social elements in evening hours.",Public Safety
+"No proper signage for directions at government hospital campus.",Healthcare
+"Water tanker timing not suitable for working people.",Utilities
+"Abandoned vehicles on road side need to be removed.",Administration
+"Public transport routes need to be rationalized for better connectivity.",Infrastructure
+"Government school building leaks during rains affecting classes.",Infrastructure
+"No street lights in newly developed colony.",Utilities
+"Medical waste disposal not being done properly at clinic.",Healthcare
+"Traffic diversion due to construction work not properly communicated.",Administration
+"Road widening project has damaged compound walls needing compensation.",Infrastructure
+"Electricity poles and wires hanging low posing danger to vehicles.",Utilities
+"Public park lacks proper fencing and security.",Public Safety
+"No proper vendor zone designated causing unauthorized street vending.",Administration
+"Water supply contaminated with sewage due to pipeline damage.",Utilities
+"Government office photocopier facility always out of order.",Administration
+"Bus shelter damaged and not repaired for long time.",Infrastructure
+"No disability friendly infrastructure at public places.",Infrastructure
+"Electricity substation making excessive noise disturbing residents.",Utilities
+"Illegal slaughterhouse operating in residential area causing nuisance.",Administration
+"Road safety barriers needed on bridge to prevent accidents.",Public Safety
+"Government hospital patient records management is very poor.",Healthcare
+"Storm water drain cover missing posing risk of accidents.",Infrastructure
+"No proper solid waste management system in rural areas.",Sanitation
+"CCTV cameras at public places not functional reducing security.",Public Safety
+"Government school lacks computer lab and library facilities.",Infrastructure
+"Water connection charges seem excessive and need clarification.",Utilities
+"Public toilet maintenance is very poor and unhygienic.",Sanitation
+"No parking space near government offices causing chaos.",Infrastructure
+"Electricity department customer service is very poor and unresponsive.",Utilities
+"Government quarters allotment process lacks transparency.",Administration
+"Street naming inconsistent causing confusion for postal delivery.",Administration
+"No proper public transport for senior citizens and disabled persons.",Infrastructure
+"Water meter reading disputes not resolved despite multiple complaints.",Utilities
+"Park exercise equipment rusted and unsafe to use.",Infrastructure
+"No proper mechanism to report and track public grievances.",Administration
+"Electricity theft in our area but no action being taken.",Administration
+"Government hospital needs fire safety audit and improvements for emergency preparedness.",Healthcare
+"Road construction quality is substandard and needs investigation.",Infrastructure
+"Water harvesting structures not maintained in government buildings.",Utilities
+"Illegal parking by government vehicles blocking public roads.",Administration
+"No proper shelter for street animals during extreme weather.",Healthcare
+"Traffic rule violations common due to lack of enforcement.",Public Safety
+"Government office lacks proper seating arrangement for visitors.",Administration
+"Drainage system cleaning needed before monsoon season.",Sanitation
+"No proper street addressing system in old city areas.",Administration
+"Electricity supply voltage fluctuation damaging home appliances.",Utilities
+"Public park timing board not displayed clearly.",Administration
+"No dedicated cycling tracks on roads for safety.",Infrastructure
+"Water quality improvement measures needed urgently.",Utilities
+"Government hospital needs more diagnostic facilities and equipment.",Healthcare
+"Road side tree roots damaging footpath and road surface.",Infrastructure
+"No proper complaint redressal mechanism at municipal office.",Administration
+"Electricity pole replacement needed as existing ones are very old.",Utilities
+"Public toilet construction quality is very poor.",Sanitation
+"No proper traffic management during festival seasons.",Public Safety
+"Government school mid day meal quality needs improvement.",Healthcare
+"Building construction violating norms but no action taken.",Administration
+"Water supply timings not adhered to as per schedule.",Utilities
+"Park lake cleaning needed to prevent mosquito breeding.",Healthcare
+"No proper bus route information display at bus stops.",Infrastructure
+"Electricity department not providing proper breakdown reports.",Utilities
+"Government office grievance cell staff not cooperative.",Administration
+"Road repair work incomplete and causing more problems.",Infrastructure
+"No street names and house numbering in our locality.",Administration
+"Water pipeline burst causing flooding in residential area.",Utilities
+"Public toilet hand wash facility not working.",Sanitation
+"No proper speed control measures in school zones.",Public Safety
+"Government dispensary operating hours not convenient.",Healthcare
+"Building plan sanctions delayed without valid reasons.",Administration
+"Electricity smart card recharge facility not available nearby.",Utilities
+"Park benches broken and need replacement.",Infrastructure
+"No proper grievance tracking system for public complaints.",Administration
+"Road side plantations dying due to lack of maintenance.",Infrastructure
+"Water connection application process too complicated.",Utilities
+"Government hospital canteen food quality and hygiene poor.",Healthcare
+"No dedicated emergency helpline for civic issues.",Administration
+"Electricity bill payment counters always crowded and slow.",Utilities
+"Public transport frequency inadequate during peak hours.",Infrastructure
+"No proper recycling facility for electronic waste.",Sanitation
+"Traffic police need better training for courteous behavior.",Administration
+"Government school infrastructure not suitable for modern education.",Infrastructure
+"Water quality complaints not investigated properly.",Utilities
+"Park has no proper children play area equipment.",Infrastructure
+"No disability accessible facilities at government hospitals.",Healthcare
+"Electricity connections for new constructions delayed excessively.",Utilities
+"Government office digitization incomplete causing inefficiency.",Administration
+"Road accident response mechanism needs improvement.",Public Safety
+"No proper system for reporting potholes and road damage.",Infrastructure
+"Water meter tampering in our area but no action taken.",Administration
+"Public toilet lacks adequate water supply.",Utilities
+"No senior citizen helpline for government services.",Administration
+"Electricity cable laying work damaging roads not being repaired.",Infrastructure
+"Government quarters sewage system needs urgent repairs.",Sanitation
+"No proper medical emergency response system in remote areas.",Healthcare
+"Tree cutting permissions given without proper environmental assessment.",Administration
+"Water supply interruptions not communicated in advance.",Utilities
+"Public park lacks proper lighting making it unsafe after dark.",Public Safety
+"No proper queue management at government service centers.",Administration
+"Electricity department online services portal very user unfriendly.",Utilities
+"Government hospital lacks proper signage for different departments.",Healthcare
+"Road construction projects running beyond scheduled completion time.",Infrastructure
+"No grievance officers appointed at municipal ward level.",Administration
+"Water tanker supply distribution not transparent and fair.",Administration
+"Public toilets near market areas insufficient in number.",Sanitation
+"No proper traffic education programs for school children.",Public Safety
+"Electricity billing errors not corrected despite multiple complaints.",Utilities
+"Government office lacks proper waiting area facilities.",Administration
+"Park needs landscaping and beautification for better aesthetics.",Infrastructure
+"No proper mechanism for citizens to verify government schemes eligibility.",Administration
+"Water supply infrastructure very old and needs complete overhaul.",Utilities
+"Government hospital patient feedback system not functional.",Healthcare
+"No dedicated lanes for public transport on major roads.",Infrastructure
+"Electricity supply restoration after faults taking too long.",Utilities
+"Public parks encroached by vendors during festivals.",Administration
+"No proper system for reporting illegal constructions.",Administration
+"Water bill generation system has frequent errors.",Utilities
+"Government school needs better sports facilities and equipment.",Infrastructure
+"No public health awareness campaigns conducted regularly.",Healthcare
+"Traffic signal timing not optimized causing unnecessary delays.",Public Safety
+"Electricity department lacks transparency in load shedding schedule.",Utilities
+"Government quarters rent calculation seems incorrect.",Administration
+"No proper facility for senior citizens at government offices.",Infrastructure
+"Road side vendor licensing process needs simplification.",Administration
+"Water supply pipes bursting frequently indicating poor quality.",Utilities
+"Public toilet cleaning schedule not followed regularly.",Sanitation
+"No proper mechanism for community participation in local governance.",Administration
+"Electricity power cuts during exams affecting students preparation.",Utilities
+"Government hospital needs better emergency ward facilities urgently as patients are in critical danger.",Healthcare
+"Park entry gates locked during daytime without any notice.",Administration
+"No proper bus shelters on newly constructed roads.",Infrastructure
+"Water connection meter installation delayed for months.",Utilities
+"Government office air conditioning not working in summer heat.",Administration
+"No dedicated customer service center for municipal complaints.",Administration
+"Electricity pole transformers overloaded and pose fire risk danger.",Public Safety
+"Public transport buses not disabled friendly.",Infrastructure
+"No proper rainwater drainage on arterial roads.",Infrastructure
+"Water quality testing not done regularly and reports not public.",Utilities
+"Government school toilet facilities inadequate and unhygienic.",Sanitation
+"No proper system for online payment of municipal taxes.",Administration
+"Electricity department staff behavior is rude and unhelpful.",Administration
+"Park maintenance contract not being monitored properly.",Administration
+"No proper street lights on service lanes and bylanes.",Utilities
+"Water supply privatization affecting affordability for poor.",Administration
+"Government hospital parking facility insufficient for patients.",Infrastructure
+"No proper complaint tracking app for civic issues.",Administration
+"Electricity meter location change requests pending for long time.",Utilities
+"Public transport fare revision not justified and too high.",Administration
+"No proper solid waste disposal facility in apartment complexes.",Sanitation
+"Traffic congestion near schools needs immediate attention.",Public Safety
+"Government quarters lack basic amenities and maintenance.",Infrastructure
+"Water pipeline relocation for road widening not coordinated.",Infrastructure
+"Public park has no proper toilet facilities for visitors.",Sanitation
+"No senior citizen discount for electricity bills despite policy.",Administration
+"Government office lacks proper grievance redressal timeline.",Administration
+"Road construction debris removal not done causing traffic hazards.",Infrastructure
+"No proper system for reporting water leakages and wastage.",Administration
+"Electricity underground cabling project progress very slow.",Infrastructure
+"Government hospital needs more specialist doctors urgently for critical emergency cases.",Healthcare
+"Park timing restrictions not clearly displayed at entry.",Administration
+"No proper public WiFi implementation despite announcements.",Infrastructure
+"Water supply pressure variation damaging household fittings.",Utilities
+"Government school teacher shortage affecting education quality.",Administration
+"No dedicated help desk for elderly citizens at offices.",Administration
+"Electricity bill disputes resolution mechanism is ineffective.",Administration
+"Public transport route maps not available at bus stops.",Infrastructure
+"No proper animal birth control program implementation.",Healthcare
+"Traffic police deployment inadequate during rush hours.",Public Safety
+"Government office appointment system not working properly.",Administration
+"Road repair after utility work not done to original standard.",Infrastructure
+"No proper system for citizen feedback on government services.",Administration
+"Water supply distribution inequitable across different areas.",Administration
+"Public toilet construction pending for years despite budget allocation.",Sanitation
+"No proper lighting at pedestrian crossings making them unsafe.",Public Safety
+"Electricity connection load enhancement requests processing very slow.",Utilities
+"Government quarters garbage collection irregular and inadequate.",Sanitation
+"Park has no drinking water facility for visitors.",Utilities
+"No proper coordination between different government departments.",Administration
+"Water conservation awareness programs needed in schools.",Healthcare
+"Government hospital appointment booking system inefficient.",Healthcare
+"No dedicated complaint number for different civic departments.",Administration
+"Electricity department technical staff shortage causing service delays.",Administration
+"Public transport app showing incorrect bus arrival information.",Infrastructure
+"No proper enforcement of building construction regulations.",Administration
+"Road accident data not analyzed for improving safety measures.",Public Safety
+"Water supply infrastructure upgradation projects delayed.",Infrastructure
+"Government school infrastructure barrier for differently abled students.",Infrastructure
+"No proper waste management training for municipal workers.",Administration
+"Electricity supply reliability has deteriorated in past year.",Utilities
+"Public park security inadequate leading to vandalism.",Public Safety
+"No proper system for reporting and fixing broken street lights.",Administration
+"Water tanker quality not monitored leading to health concerns.",Healthcare
+"Government office record keeping is disorganized and inefficient.",Administration
+"No proper facility for safe disposal of biomedical waste.",Healthcare
+"Traffic rule awareness campaigns needed at community level.",Public Safety
+"Electricity bill payment online portal frequently crashes.",Administration
+"Government quarters internal roads in very poor condition.",Infrastructure
+"Park exercise timings conflict with children play hours.",Administration
+"No proper redressal for overcharging by water tanker operators.",Administration
+"Water supply infrastructure map not available publicly.",Administration
+"Government hospital cleanliness standards not maintained properly.",Healthcare
+"No proper bus frequency during non peak hours.",Infrastructure
+"Electricity connection transfer process unnecessarily complicated.",Administration
+"Public transport vehicles not maintaining emission norms.",Healthcare
+"No proper action on RTI applications about public works.",Administration
+"Road construction specifications not followed by contractors.",Infrastructure
+"Water meter accuracy certification not done periodically.",Administration
+"Government school playground size inadequate for students.",Infrastructure
+"No proper mechanism for monitoring government scheme implementation.",Administration
+"Electricity distribution losses high but no corrective action.",Administration
+"Public park lacks separate area for senior citizens.",Infrastructure
+"No proper training for government office front desk staff.",Administration
+"Water pipeline replacement project delayed affecting supply.",Infrastructure
+"Government hospital emergency services need major upgradation and better facilities for critical life threatening danger situations.",Healthcare
+"No proper signage for parking rules and penalties.",Administration
+"Electricity department preventive maintenance schedule not followed.",Administration
+"Public toilet design not suitable for differently abled persons.",Infrastructure
+"No proper coordination for utility services during road construction.",Infrastructure
+"Traffic signal synchronization needed to improve flow.",Public Safety
+"Government quarters electricity and water bills calculation errors.",Administration
+"Park has no proper boundary wall allowing stray animals.",Infrastructure
+"No proper database of government land and properties.",Administration
+"Water supply timing different on different days causing confusion.",Utilities
+"Government school lacks proper ventilation and fans.",Infrastructure
+"No citizen charter displayed at government offices.",Administration
+"Electricity department complaint resolution time exceeds norms.",Administration
+"Public transport operators not following route discipline.",Administration
+"No proper street addressing making emergency services difficult.",Administration
+"Road construction environmental clearances not followed.",Administration
+"Water supply chlorination levels not monitored regularly.",Healthcare
+"Government hospital equipment procurement process very slow.",Administration
+"No proper system for reporting and tracking road damage.",Administration
+"Electricity transformer maintenance schedule not displayed publicly.",Administration
+"Public park maintenance tender process lacks transparency.",Administration
+"No proper enforcement of noise pollution norms.",Healthcare
+"Traffic police need body cameras for better accountability.",Public Safety
+"Government office biometric attendance system frequently down.",Administration
+"No proper liaison officer for citizens at government offices.",Administration
+"Water pipeline leakage detection and repair mechanism inadequate.",Infrastructure
+"Government school teacher training programs insufficient.",Administration
+"No proper complaint escalation mechanism at government offices.",Administration
+"Electricity department contractor supervision inadequate.",Administration
+"Public transport accessibility for wheelchair users very poor.",Infrastructure
+"No proper display of government schemes and eligibility criteria.",Administration
+"Road safety audit of accident prone areas not conducted.",Public Safety
+"Water supply revenue collection efficiency needs improvement.",Administration
+"Government hospital patient safety protocols need strengthening.",Healthcare
+"No proper coordination between state and local government offices.",Administration
+"Electricity supply reliability monitoring data not made public.",Administration
+"Public toilet maintenance contract monitoring inadequate.",Administration
+"No proper timeline for different government services.",Administration
+"Traffic management technology adoption very slow.",Infrastructure
+"Government quarters maintenance complaint redressal very slow.",Administration
+"Park has no proper fencing allowing misuse after hours.",Infrastructure
+"No proper citizen engagement mechanism in urban planning.",Administration
+"Water supply metering of bulk consumers not enforced.",Administration
+"Government school computer equipment outdated and insufficient.",Infrastructure
+"No proper performance metrics for government departments.",Administration
+"Electricity department consumer service index very poor.",Administration
+"Public transport GPS tracking information not reliable.",Infrastructure
+"No proper audit of government funded construction projects.",Administration
+"Road construction project cost overruns not explained.",Administration
+"Water supply non revenue water losses very high.",Administration
+"Government hospital referral system needs improvement.",Healthcare
+"No proper documentation of government office procedures.",Administration
+"Electricity supply planning for future demand inadequate.",Administration
+"Public park child safety equipment standards not followed.",Public Safety
+"No proper transparency in government land allotment.",Administration
+"Traffic violation penalty collection system has leakages.",Administration
+"Government quarters rent fixation formula not transparent.",Administration
+"No proper citizen satisfaction survey for government services.",Administration
+"Water supply master plan implementation progress very slow.",Infrastructure
+"Government hospital housekeeping services inadequate.",Healthcare
+"No proper integration of different government service portals.",Administration
+"Electricity department revenue recovery mechanism weak.",Administration
+"Public transport schedule not reliable causing inconvenience.",Infrastructure
+"No proper whistle blower protection for reporting corruption.",Administration
+"Road construction quality assurance testing not done properly.",Infrastructure
+"Water supply department technical capacity building needed.",Administration
+"Government school student safety measures inadequate.",Public Safety
+"No proper public hearing for major infrastructure projects.",Administration
+"Electricity distribution network upgradation plans not shared.",Infrastructure
+"Public toilet usage fee collection system has corruption.",Administration
+"No proper mechanism for inter departmental coordination.",Administration
+"Traffic management during VIP movement causes public inconvenience.",Administration
+"Government quarters sewage treatment plant not functional.",Infrastructure
+"Park lighting energy efficiency measures not implemented.",Utilities
+"No proper archival of government records and decisions.",Administration
+"Water supply crisis management plan not in place.",Administration
+"Government hospital infection control measures inadequate posing serious danger to patients in critical emergency condition.",Healthcare
+"No proper environmental impact assessment of projects.",Administration
+"Electricity demand side management programs not effective.",Utilities
+"Public transport fleet modernization plan not implemented.",Infrastructure
+"No proper disaster management preparedness at local level.",Administration
