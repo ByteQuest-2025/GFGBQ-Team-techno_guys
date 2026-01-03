@@ -1,0 +1,53 @@
+{
+    "model_name": "Voting Ensemble",
+    "accuracy": 0.6941176470588235,
+    "training_date": "2026-01-04 01:05:47",
+    "training_samples": 340,
+    "test_samples": 85,
+    "categories": [
+        "Utilities",
+        "Infrastructure",
+        "Sanitation",
+        "Public Safety",
+        "Administration",
+        "Healthcare"
+    ],
+    "all_models": {
+        "Logistic Regression (Ultra)": {
+            "cv_mean": 0.6656126482213439,
+            "cv_std": 0.11678755057343171,
+            "test_accuracy": 0.6705882352941176
+        },
+        "Random Forest (Ultra)": {
+            "cv_mean": 0.562187088274045,
+            "cv_std": 0.09420299068515907,
+            "test_accuracy": 0.5882352941176471
+        },
+        "Gradient Boosting (Ultra)": {
+            "cv_mean": 0.6173913043478261,
+            "cv_std": 0.0971501514489401,
+            "test_accuracy": 0.5882352941176471
+        },
+        "Naive Bayes (Ultra)": {
+            "cv_mean": 0.6805006587615284,
+            "cv_std": 0.10838899529877416,
+            "test_accuracy": 0.611764705882353
+        },
+        "Linear SVM (Ultra)": {
+            "cv_mean": 0.7125164690382081,
+            "cv_std": 0.09759956117183466,
+            "test_accuracy": 0.6705882352941176
+        }
+    },
+    "voting_ensemble_accuracy": 0.6941176470588235,
+    "stacking_ensemble_accuracy": 0.6823529411764706,
+    "feature_extraction": "TF-IDF (Ultra-optimized)",
+    "tfidf_config": {
+        "max_features": "25000",
+        "ngram_range": "(1,4)",
+        "min_df": 1,
+        "max_df": 0.85
+    },
+    "cv_strategy": "StratifiedKFold-15",
+    "optimization_level": "Ultra"
+}
