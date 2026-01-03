@@ -12,7 +12,7 @@
 ---
 
 ## 📌 Problem Statement
-
+    . 
 **PS-12: AI for Grievance Redressal in Public Governance**
 
 Government bodies receive thousands of citizen grievances daily related to infrastructure, sanitation, healthcare, public safety, utilities, and administrative delays. These grievances are often unstructured (free text, mixed languages) and manually processed, which slows resolution. The lack of intelligent prioritization and routing causes delayed resolution of critical issues, citizen dissatisfaction, and reduced transparency.
@@ -47,7 +47,15 @@ Government bodies receive thousands of citizen grievances daily related to infra
 ✅ **NLTK Sentiment Analysis** - Emotion detection in complaints  
 ✅ **Production Ready** - All errors fixed, deployment guide included  
 
+<<<<<<< HEAD
 ---
+=======
+## 📊 Presentation
+
+`https://your-ppt-link.com`  
+(Google Slides / Drive)
+ ok
+>>>>>>> origin/main
 
 ## 📖 Project Overview
 

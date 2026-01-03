@@ -123,6 +123,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+<<<<<<< HEAD
 st.markdown("<div class='top-nav'>", unsafe_allow_html=True)
 page = st.radio(
     "Navigation Menu",
@@ -143,6 +144,32 @@ def load_model():
     if os.path.exists(path):
         return joblib.load(path)
     return None
+=======
+# Sidebar
+with st.sidebar:
+    st.title("📋 Information")
+    st.info("""
+    **How it works:**
+    1. Enter your complaint in the text area
+    2. Click 'Analyze Complaint'
+    3. Get instant AI-powered analysis
+    
+    **Features:**
+    - ✅ Category Classification
+    - ⚡ Priority Detection
+    - 🏢 Department Assignment
+    """)
+    
+    st.divider()
+    st.caption("Powered by AI & Machine Learning")
+
+# Header
+st.markdown('<p class="header-title">🎯 AI-Powered Grievance Redressal System</p>', unsafe_allow_html=True)
+st.markdown('<p class="header-subtitle">Intelligent complaint analysis and automated department assignment</p>', unsafe_allow_html=True)
+
+# Main content area
+col1, col2 = st.columns([2, 1])
+>>>>>>> origin/main
 
 model = load_model()
 
