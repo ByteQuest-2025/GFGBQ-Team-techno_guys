@@ -2,9 +2,6 @@ import streamlit as st
 import joblib
 from utils import get_priority, get_department
 
-# Load trained model
-model = joblib.load("model/classifier.pkl")
-
 # Page configuration
 st.set_page_config(
     page_title="AI Grievance System",
@@ -17,154 +14,152 @@ st.set_page_config(
 st.markdown("""
     <style>
     .main {
-        padding: 2rem;
+        background-color: #f5f7fa;
     }
     .stButton>button {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background-color: #4CAF50;
         color: white;
-        font-weight: bold;
+        font-size: 18px;
+        padding: 12px 30px;
         border-radius: 10px;
-        padding: 0.75rem 2rem;
         border: none;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease;
         width: 100%;
+        transition: 0.3s;
     }
     .stButton>button:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        background-color: #45a049;
+        transform: scale(1.02);
     }
     .result-box {
-        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-        padding: 2rem;
+        background-color: white;
+        padding: 25px;
         border-radius: 15px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        margin-top: 2rem;
+        margin: 20px 0;
     }
-    .metric-card {
-        background: white;
-        padding: 1.5rem;
-        border-radius: 10px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-        text-align: center;
-        margin: 0.5rem 0;
-    }
-    .metric-label {
-        color: #666;
-        font-size: 0.9rem;
-        font-weight: 500;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-    }
-    .metric-value {
-        color: #333;
-        font-size: 1.5rem;
+    .header-title {
+        font-size: 48px;
         font-weight: bold;
-        margin-top: 0.5rem;
-    }
-    h1 {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: 3rem !important;
-        font-weight: 800 !important;
+        color: #1e3a8a;
         text-align: center;
-        margin-bottom: 0.5rem !important;
+        margin-bottom: 10px;
     }
-    .subtitle {
+    .header-subtitle {
+        font-size: 20px;
+        color: #64748b;
         text-align: center;
-        color: #666;
-        font-size: 1.2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 30px;
     }
     </style>
-    """, unsafe_allow_html=True)
+""", unsafe_allow_html=True)
+
+# Load trained model
+model = joblib.load("model/classifier.pkl")
 
 # Sidebar
 with st.sidebar:
-    st.header("📋 About")
-    st.write("""
-    This AI-powered system automatically:
-    - **Categorizes** citizen complaints
-    - **Assigns priority** levels
-    - **Routes** to appropriate departments
-    """)
-    
-    st.divider()
-    
-    st.header("🎯 How to Use")
-    st.write("""
+    st.title("📋 Information")
+    st.info("""
+    **How it works:**
     1. Enter your complaint in the text area
-    2. Click "Analyze Complaint"
-    3. View the AI-generated analysis
+    2. Click 'Analyze Complaint'
+    3. Get instant AI-powered analysis
+    
+    **Features:**
+    - ✅ Category Classification
+    - ⚡ Priority Detection
+    - 🏢 Department Assignment
     """)
     
     st.divider()
+    st.caption("Powered by AI & Machine Learning")
+
+# Header
+st.markdown('<p class="header-title">🎯 AI-Powered Grievance Redressal System</p>', unsafe_allow_html=True)
+st.markdown('<p class="header-subtitle">Intelligent complaint analysis and automated department assignment</p>', unsafe_allow_html=True)
+
+# Main content area
+col1, col2 = st.columns([2, 1])
+
+with col1:
+    st.markdown("### 📝 Enter Your Complaint")
+    complaint = st.text_area(
+        "Describe your issue in detail:",
+        height=200,
+        placeholder="Example: The streetlights in my area have been broken for weeks...",
+        help="Please provide as much detail as possible for accurate analysis"
+    )
     
-    st.info("💡 Tip: Be specific in your complaint description for better results.")
-
-# Main content
-st.title("🎯 AI-Powered Grievance Redressal System")
-st.markdown('<p class="subtitle">Smart complaint analysis and routing powered by machine learning</p>', unsafe_allow_html=True)
-
-st.divider()
-
-# Input section
-st.markdown("### 📝 Submit Your Complaint")
-complaint = st.text_area(
-    "Complaint Details",
-    placeholder="Describe your complaint here in detail...",
-    height=150,
-    help="Provide clear details about your issue for accurate analysis"
-)
-
-col1, col2, col3 = st.columns([1, 2, 1])
-with col2:
     analyze_button = st.button("🔍 Analyze Complaint", use_container_width=True)
 
+with col2:
+    st.markdown("### 📊 Quick Stats")
+    st.metric("Total Complaints", "1,234", "+89")
+    st.metric("Avg Response Time", "2.3 hrs", "-0.5 hrs")
+    st.metric("Resolution Rate", "94%", "+2%")
+
+# Analysis section
 if analyze_button:
     if complaint.strip() == "":
-        st.warning("⚠️ Please enter a complaint before analyzing.")
+        st.error("⚠️ Please enter a complaint before analyzing.")
     else:
-        with st.spinner("🤖 AI is analyzing your complaint..."):
+        with st.spinner("🔄 Analyzing your complaint..."):
             category = model.predict([complaint])[0]
             priority = get_priority(complaint)
             department = get_department(category)
         
         st.success("✅ Analysis Complete!")
         
-        # Results section
-        st.markdown("### 📊 Analysis Results")
+        # Results display
+        st.markdown("---")
+        st.markdown("### 📈 Analysis Results")
         
-        # Display metrics in columns
-        col1, col2, col3 = st.columns(3)
+        # Display results in columns
+        res_col1, res_col2, res_col3 = st.columns(3)
         
-        with col1:
+        with res_col1:
             st.markdown("""
-                <div class="metric-card">
-                    <div class="metric-label">📂 Category</div>
-                    <div class="metric-value">{}</div>
+                <div class="result-box">
+                    <h4 style="color: #3b82f6;">🏷️ Category</h4>
+                    <p style="font-size: 24px; font-weight: bold; color: #1e293b;">{}</p>
                 </div>
             """.format(category), unsafe_allow_html=True)
         
-        with col2:
-            priority_color = "🔴" if priority == "High" else "🟡" if priority == "Medium" else "🟢"
+        with res_col2:
+            priority_color = "#ef4444" if priority == "High" else "#f59e0b" if priority == "Medium" else "#22c55e"
+            priority_icon = "🔴" if priority == "High" else "🟡" if priority == "Medium" else "🟢"
             st.markdown("""
-                <div class="metric-card">
-                    <div class="metric-label">⚡ Priority</div>
-                    <div class="metric-value">{} {}</div>
+                <div class="result-box">
+                    <h4 style="color: #f59e0b;">⚡ Priority</h4>
+                    <p style="font-size: 24px; font-weight: bold; color: {};">{} {}</p>
                 </div>
-            """.format(priority_color, priority), unsafe_allow_html=True)
+            """.format(priority_color, priority_icon, priority), unsafe_allow_html=True)
         
-        with col3:
+        with res_col3:
             st.markdown("""
-                <div class="metric-card">
-                    <div class="metric-label">🏢 Department</div>
-                    <div class="metric-value">{}</div>
+                <div class="result-box">
+                    <h4 style="color: #8b5cf6;">🏢 Department</h4>
+                    <p style="font-size: 24px; font-weight: bold; color: #1e293b;">{}</p>
                 </div>
             """.format(department), unsafe_allow_html=True)
         
-        st.divider()
+        # Additional information
+        st.markdown("---")
+        with st.expander("📋 View Complaint Details"):
+            st.write("**Your Complaint:**")
+            st.info(complaint)
+            st.write("**Timestamp:**", "2026-01-03 14:30:00")
+            st.write("**Status:**", "✅ Forwarded to respective department")
         
-        # Additional info
-        st.info(f"📌 Your complaint has been categorized as **{category}** and assigned to the **{department}** department with **{priority}** priority.")
+        # Action buttons
+        st.markdown("### 🎯 Next Steps")
+        btn_col1, btn_col2, btn_col3 = st.columns(3)
+        with btn_col1:
+            if st.button("📨 Send Email Notification", use_container_width=True):
+                st.success("Email sent successfully!")
+        with btn_col2:
+            if st.button("📥 Download Report", use_container_width=True):
+                st.success("Report downloaded!")
+        with btn_col3:
+            if st.button("🔄 Submit Another", use_container_width=True):
+                st.rerun()

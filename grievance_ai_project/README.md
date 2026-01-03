@@ -3,7 +3,7 @@
 Repository for Team techno_guys — Vibe Coding Hackathon
 
 ## 📌 Problem Statement
-    . 
+
 **PS-12: AI for Grievance Redressal in Public Governance**
 
 Government bodies receive thousands of citizen grievances daily related to infrastructure, sanitation, healthcare, public safety, utilities, and administrative delays. These grievances are often unstructured (free text, mixed languages) and manually processed, which slows resolution. The lack of intelligent prioritization and routing causes delayed resolution of critical issues, citizen dissatisfaction, and reduced transparency.
@@ -27,11 +27,10 @@ There is a need for an AI-powered system that can automatically analyze, classif
 `https://your-demo-video-link.com`  
 (YouTube unlisted / Google Drive)
 
-## 📊 Presentation
+## 📊 Presentation (optional)
 
 `https://your-ppt-link.com`  
 (Google Slides / Drive)
- ok
 
 ## 📖 Project Overview
 
@@ -143,7 +142,9 @@ The application will run at: <http://localhost:8501>
    - Determine the priority level (Critical or Normal) based on keywords
    - Assign it to the relevant department
 
-## 🧠 How It Work
+## 🧠 How It Works
+
+### Model Training (`train_model.py`)
 
 The system uses a machine learning pipeline with:
 - **TF-IDF Vectorizer**: Converts text complaints into numerical features
