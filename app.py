@@ -82,6 +82,22 @@ st.markdown("""
 🇮🇳 Government of India | AI-Powered Grievance Redressal System
 </div>
 """, unsafe_allow_html=True)
+# =====================================================
+# HEADER + TOP NAVIGATION
+# =====================================================
+st.markdown(
+    "<div class='gov-header'>🇮🇳 GOVERNMENT OF INDIA | AI-Powered Grievance Redressal System</div>",
+    unsafe_allow_html=True
+)
+
+st.markdown("<div class='top-nav'>", unsafe_allow_html=True)
+page = st.radio(
+    "Navigation Menu",
+    ["🏠 Submit Complaint", "📊 Dashboard", "🔍 Track Complaint", "⚙️ Admin Panel"],
+    horizontal=True,
+    label_visibility="collapsed"
+)
+st.markdown("</div>", unsafe_allow_html=True)
 
 # ================= DATABASE & MODEL =================
 db = GrievanceDatabase()
@@ -89,7 +105,12 @@ db = GrievanceDatabase()
 @st.cache_resource
 def load_model():
     path = "model/classifier.pkl"
+
     return joblib.load(path) if os.path.exists(path) else None
+
+    if os.path.exists(path):
+        return joblib.load(path)
+    return None
 
 model = load_model()
 
