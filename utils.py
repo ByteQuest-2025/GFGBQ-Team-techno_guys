@@ -18,41 +18,56 @@ except:
 
 def get_priority(text):
     """Determine complaint priority based on keywords and urgency."""
-    text = text.lower()
+    if not text or not isinstance(text, str):
+        return "Low"
+    
+    text = text.lower().strip()
     
     # Critical keywords (life-threatening, immediate danger)
     critical_keywords = [
-        "emergency", "urgent", "critical", "danger", "life", "death",
-        "fire", "accident", "collapse", "explosion", "injury", "bleeding",
-        "attack", "threat", "severe", "crisis"
+        "emergency", "life threatening", "critical", "danger", "death",
+        "fire", "collapse", "explosion", "injury", "bleeding",
+        "attack", "severe", "crisis", "urgent attention", "urgent",
+        "suffering", "ambulance stuck", "fire hazard", "fire risk",
+        "posing serious danger", "critical emergency", "life", "patient"
     ]
     
-    # High priority keywords
+    # High priority keywords (health/safety risks, major disruptions)
     high_keywords = [
         "hospital", "broken", "damaged", "leak", "flooding",
-        "contaminated", "unsafe", "risk", "hazard", "exposed"
+        "contaminated", "unsafe", "risk", "hazard", "exposed",
+        "pollution", "very high", "very low", "industrial", "health", "medical",
+        "stagnant water", "sewage", "overflow", "waterlogging", "disrupted",
+        "clogged", "causing accidents", "attacked", "menace", "causing", 
+        "affecting", "insufficient", "lacks", "abandoned", "creating nuisance",
+        "stuck", "malfunctioning", "outage", "tilted dangerously", "dilapidated",
+        "posing risk", "fire safety", "open manhole", "respiratory problems"
     ]
     
-    # Medium priority keywords
+    # Medium priority keywords (service quality, maintenance)
     medium_keywords = [
-        "problem", "issue", "concern", "need", "require",
-        "poor", "inadequate", "insufficient", "delayed"
+        "problem", "issue", "concern", "need", "needs", "require",
+        "poor", "inadequate", "delayed", "not working", "irregular", 
+        "missing", "pending", "slow", "very poor", "not maintained",
+        "not available", "not functioning", "not responding", "not clear",
+        "difficult", "inconvenience", "overcrowded", "excessive", "unclear",
+        "rude", "improper", "limited", "complicated", "frequently", "outdated"
     ]
     
-    # Check for critical
-    for word in critical_keywords:
-        if word in text:
+    # Check for critical (highest priority)
+    for keyword in critical_keywords:
+        if keyword in text:
             return "Critical"
     
-    # Check for high
-    high_count = sum(1 for word in high_keywords if word in text)
-    if high_count >= 2:
-        return "High"
+    # Check for high priority
+    for keyword in high_keywords:
+        if keyword in text:
+            return "High"
     
-    # Check for medium
-    medium_count = sum(1 for word in medium_keywords if word in text)
-    if medium_count >= 2:
-        return "Medium"
+    # Check for medium priority
+    for keyword in medium_keywords:
+        if keyword in text:
+            return "Medium"
     
     return "Low"
 
@@ -72,44 +87,56 @@ def get_department(category):
 
 def get_sentiment(text):
     """Analyze sentiment of the complaint."""
+    if not text or not isinstance(text, str):
+        return {"label": "Neutral", "score": 0.0}
+    
     if not SENTIMENT_AVAILABLE:
         return {"label": "Neutral", "score": 0.0}
     
-    sia = SentimentIntensityAnalyzer()
-    scores = sia.polarity_scores(text)
-    compound = scores['compound']
-    
-    if compound >= 0.05:
-        label = "Positive"
-    elif compound <= -0.05:
-        label = "Negative"
-    else:
-        label = "Neutral"
-    
-    return {
-        "label": label,
-        "score": round(compound, 3),
-        "positive": round(scores['pos'], 3),
-        "negative": round(scores['neg'], 3),
-        "neutral": round(scores['neu'], 3)
-    }
+    try:
+        sia = SentimentIntensityAnalyzer()
+        scores = sia.polarity_scores(text)
+        compound = scores['compound']
+        
+        if compound >= 0.05:
+            label = "Positive"
+        elif compound <= -0.05:
+            label = "Negative"
+        else:
+            label = "Neutral"
+        
+        return {
+            "label": label,
+            "score": round(compound, 3),
+            "positive": round(scores['pos'], 3),
+            "negative": round(scores['neg'], 3),
+            "neutral": round(scores['neu'], 3)
+        }
+    except Exception as e:
+        return {"label": "Neutral", "score": 0.0}
 
 
 def extract_keywords(text, top_n=5):
     """Extract important keywords from complaint."""
-    # Remove common words
-    stop_words = {'the', 'is', 'at', 'which', 'on', 'a', 'an', 'and', 'or', 'but', 
-                  'in', 'with', 'to', 'for', 'of', 'as', 'by', 'this', 'that',
-                  'are', 'was', 'were', 'been', 'be', 'have', 'has', 'had', 'do',
-                  'does', 'did', 'will', 'would', 'should', 'could', 'may', 'might'}
+    if not text or not isinstance(text, str):
+        return []
     
-    # Tokenize and clean
-    words = re.findall(r'\b[a-z]{4,}\b', text.lower())
-    filtered_words = [w for w in words if w not in stop_words]
-    
-    # Count frequency
-    word_freq = Counter(filtered_words)
-    return [word for word, _ in word_freq.most_common(top_n)]
+    try:
+        # Remove common words
+        stop_words = {'the', 'is', 'at', 'which', 'on', 'a', 'an', 'and', 'or', 'but', 
+                      'in', 'with', 'to', 'for', 'of', 'as', 'by', 'this', 'that',
+                      'are', 'was', 'were', 'been', 'be', 'have', 'has', 'had', 'do',
+                      'does', 'did', 'will', 'would', 'should', 'could', 'may', 'might'}
+        
+        # Tokenize and clean
+        words = re.findall(r'\b[a-z]{4,}\b', text.lower())
+        filtered_words = [w for w in words if w not in stop_words]
+        
+        # Count frequency
+        word_freq = Counter(filtered_words)
+        return [word for word, _ in word_freq.most_common(top_n)]
+    except Exception as e:
+        return []
 
 
 def estimate_resolution_time(category, priority):
@@ -132,15 +159,18 @@ def estimate_resolution_time(category, priority):
         "Low": 1.5
     }
     
-    base = base_times.get(category, 48)
-    multiplier = priority_multipliers.get(priority, 1.0)
-    hours = int(base * multiplier)
-    
-    if hours < 24:
-        return f"{hours} hours"
-    else:
-        days = hours // 24
-        return f"{days} days"
+    try:
+        base = base_times.get(category, 48)
+        multiplier = priority_multipliers.get(priority, 1.0)
+        hours = int(base * multiplier)
+        
+        if hours < 24:
+            return f"{hours} hours"
+        else:
+            days = hours // 24
+            return f"{days} days"
+    except Exception as e:
+        return "2-3 days"
 
 
 def generate_ticket_id():
