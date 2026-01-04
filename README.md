@@ -36,7 +36,7 @@ Government bodies receive thousands of citizen grievances daily related to infra
 
 ## 📊 PPT Link
 
-**Presentation:** [View Presentation](https://drive.google.com/file/d/1IMmTeH1pc-VHiFHyTKeo1TVTGM7z2gVJ/view?usp=sharing)
+**Presentation:** [View Presentation](https://drive.google.com/file/d/1uKR24SjtiTx0BUGrXdx0z5zG39kfDanC/view?usp=sharing)
 
 ---
 
