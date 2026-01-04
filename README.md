@@ -1,24 +1,12 @@
 # 🇮🇳 AI-Powered Grievance Redressal System
- 
-**Team techno_guys — ByteQuest Hackathon 2025**
-
-[![Python](https://img.shields.io/badge/Python-3.13-blue.svg)](https://www.python.org/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.52.1-FF4B4B.svg)](https://streamlit.io/)
-[![ML Accuracy](https://img.shields.io/badge/ML%20Accuracy-69.41%25-success.svg)](https://github.com)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-
-> **Production-ready AI system for intelligent government grievance classification, prioritization, and management.**
- 
 
 ---
-   
+
 ## 📌 Problem Statement
-    
+
 **PS-12: AI for Grievance Redressal in Public Governance**
 
 Government bodies receive thousands of citizen grievances daily related to infrastructure, sanitation, healthcare, public safety, utilities, and administrative delays. These grievances are often unstructured (free text, mixed languages) and manually processed, which slows resolution. The lack of intelligent prioritization and routing causes delayed resolution of critical issues, citizen dissatisfaction, and reduced transparency.
-
-**Solution:** An AI-powered system that automatically analyzes, classifies, prioritizes, and routes grievances to enable faster, fairer, and more accountable governance.
 
 ---
 
@@ -28,15 +16,39 @@ Government bodies receive thousands of citizen grievances daily related to infra
 
 ---
 
-## 👥 Team techno_guys
+## 👥 Team Name
 
-**Repository:** https://github.com/ByteQuest-2025/GFGBQ-Team-techno_guys  
-**Branch:** Debasis  
-**Admin Password:** `admin123`
+**techno_guys**
 
 ---
 
-## 🌟 Key Highlights
+## 🚀 Deployed Link
+
+**Live Application:** [https://smartgov-ai.streamlit.app/](https://smartgov-ai.streamlit.app/)
+
+---
+
+## 🎥 2-Minute Demonstration Video Link
+
+**Video:** https://drive.google.com/file/d/1JgoNyL8P3_maxLiWyZkCaqm6ERUKWoAG/view?usp=drive_link
+---
+
+## 📊 PPT Link
+
+**Presentation:** https://drive.google.com/file/d/1IMmTeH1pc-VHiFHyTKeo1TVTGM7z2gVJ/view?usp=sharing
+
+---
+
+## 🌟 Project Overview
+
+**SmartGov AI** is a production-ready AI-powered system for intelligent government grievance classification, prioritization, and management. This enterprise-grade platform helps government bodies automatically understand, prioritize, and route citizen complaints using advanced Natural Language Processing (NLP) and Machine Learning.
+
+[![Python](https://img.shields.io/badge/Python-3.13-blue.svg)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.52.1-FF4B4B.svg)](https://streamlit.io/)
+[![ML Accuracy](https://img.shields.io/badge/ML%20Accuracy-69.41%25-success.svg)](https://github.com)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+### **Key Highlights:**
 
 ✅ **69.41% ML Accuracy** with ensemble voting classifier  
 ✅ **Admin Authentication** - Secure password-protected panel  
@@ -46,21 +58,7 @@ Government bodies receive thousands of citizen grievances daily related to infra
 ✅ **PDF Reports** - Auto-generated complaint documentation  
 ✅ **SQLite Database** - Complete complaint tracking system  
 ✅ **NLTK Sentiment Analysis** - Emotion detection in complaints  
-✅ **Production Ready** - All errors fixed, deployment guide included  
-
-<<<<<<< HEAD
----
-=======
-## 📊 Presentation
-
-`https://your-ppt-link.com`  
-(Google Slides / Drive)
- ok
->>>>>>> origin/main
-
-## 📖 Project Overview
-
-SmartGov AI is an enterprise-grade AI-driven grievance redressal platform that helps government bodies automatically understand, prioritize, and route citizen complaints using advanced Natural Language Processing (NLP) and Machine Learning.
+✅ **Production Ready** - All errors fixed, deployment guide included
 
 ### **How It Works:**
 1. **Citizen submits complaint** via web interface with contact details
@@ -73,7 +71,9 @@ SmartGov AI is an enterprise-grade AI-driven grievance redressal platform that h
 8. **PDF report** generated with ticket ID
 9. **Admin panel** for status updates and management
 
-This reduces manual workload by 80%, speeds up resolution time, and improves transparency and accountability.
+**Impact:** This reduces manual workload by 80%, speeds up resolution time, and improves transparency and accountability.
+
+---
 
 ## 🧠 Key Features
 
@@ -113,7 +113,41 @@ This reduces manual workload by 80%, speeds up resolution time, and improves tra
 - **4 Main Pages**:
   - 🏠 **Submit Complaint** - Form with AI processing
   - 📊 **Dashboard** - Analytics and visualizations
-  -🚀 Quick Start
+  - 🔍 **Track Complaint** - Search by ticket ID
+  - ⚙️ **Admin Panel** - Password-protected management
+
+---
+
+## 🔧 Technology Stack
+
+### **Backend & Framework**
+- **Streamlit 1.52.1** - Web application framework
+- **Python 3.13** - Core programming language
+
+### **Machine Learning**
+- **scikit-learn 1.7.2** - ML model training and inference
+- **TF-IDF Vectorizer** - Text feature extraction (30K features, 1-4 grams)
+- **Ensemble Methods** - VotingClassifier, StackingClassifier
+- **Models**: Logistic Regression, Random Forest, Gradient Boosting, Naive Bayes, Linear SVM
+- **joblib 1.5.2** - Model serialization
+
+### **Natural Language Processing**
+- **NLTK 3.9.2** - Sentiment analysis (VADER)
+- **Regex** - Text preprocessing and keyword extraction
+
+### **Database & Storage**
+- **SQLite3** - Lightweight relational database
+- **pandas 2.3.3** - Data manipulation and CSV export
+
+### **Visualization**
+- **Plotly 5.24.1** - Interactive charts and graphs
+
+### **Document Generation**
+- **ReportLab 4.2.2** - PDF report creation
+
+---
+
+## ⚙️ Setup and Installation
 
 ### **Prerequisites**
 - Python 3.13 or higher
@@ -164,133 +198,7 @@ streamlit run app.py
 
 ---
 
-## 📁 Project Structure
-
-```
-GFGBQ-Team-techno_guys/
-├── app.py                      # Main Streamlit application
-├── database.py                 # SQLite database operations
-├── utils.py                    # Helper functions (priority, sentiment, etc.)
-├── report_generator.py         # PDF generation and email notifications
-├── train_model.py              # ML model training script
-├── requirements.txt            # Python dependencies
-├── README.md                   # Project documentation
-├── DEPLOYMENT_GUIDE.md         # Complete deployment instructions
-├── DATABASE_ANALYSIS.md        # Database schema documentation
-├── FUTURE_ERROR_ANALYSIS.md    # Error prevention guide
-├── data/
-│   ├── cleaned_data.csv        # Training dataset
-│   └── grievances.db           # SQLite database (auto-created)
-└── model/
-    ├── classifier.pkl          # Trained ML model
-    └── model_metadata.json     # Model performance metrics
-```
-
----
-
-## ⚙️ Detailed Installation
-
-### **Option 1: Standard Installation**
-
-**Windows:**
-
-```powershell
-# Clone repository
-git clone https://github.com/ByteQuest-2025/GFGBQ-Team-techno_guys.git
-cd GFGBQ-Team-techno_guys
-
-# Install dependencies
-pip install -r requirements.txt
-pip install plotly reportlab xlsxwriter
-
-# Train model
-python train_model.py
-
-# Run application
-streamlit run app.py
-```
-
-**macOS / Linux:**
-
-```bash
-# Clone repository
-git clone https://github.com/ByteQuest-2025/GFGBQ-Team-techno_guys.git
-cd GFGBQ-Team-techno_guys
-
-# Create virtual environment (recommended)
-python3 -m venv venv
-source venv/bin/activate
-
-# Install dependencies
-pip install -r requirements.txt
-pip install plotly reportlab xlsxwriter
-
-# Train model
-python train_model.py
-
-# Run application
-streamlit run app.pytack
-
-### **Backend & Framework**
-- **Streamlit 1.52.1** - Web application framework
-- **Python 3.13** - Core programming language
-
-### **Machine Learning**
-- **scikit-learn** - ML model training and inference
-- **TF-IDF Vectorizer** - Text feature extraction (30K features, 1-4 grams)
-- **Ensemble Methods** - VotingClassifier, StackingClassifier
-- **Models**: Logistic Regression, Random Forest, Gradient Boosting, Naive Bayes, Linear SVM
-- **joblib** - Model serialization (not pickle)
-
-### **Natural Language Processing**
-- **NLTK** - Sentiment analysis (VADER)
-- **Regex** - Text preprocessing and keyword extraction
-
-### **Database & Storage**
-- **SQLite3** - Lightweight relational database
-- **pandas** - Data manipulation and CSV export
-
-### **Visualization**
-- **Plotly 5.24.1** - Interactive charts and graphs
-
-### **Document Generation**
-- **ReportLab 4.2.2** - PDF report creation
-
-### **Data & Dataset**
-- Structured grievance dataset (CSV format)
-- 6 balanced categories
-- Training data in `data/cleaned_data.csv`
-
-## ⚙️ Setup and Installation
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/ByteQuest-2025/GFGBQ-Team-techno_guys
-cd GFGBQ-Team-techno_guys
-```
-
-### 2. Create and activate a virtual environment (recommended)
-
-**macOS / Linux:**
-
-```bash
-python -m venv venv
-source venv/bin/activate
-```
-
-**Windows (PowerShell):**
-
-```powershell
-```
-
-### **Option 2: Docker Deployment**
-
-See [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) for complete Docker and cloud deployment instructions.
-
----
-
-## 💻 Usage Guide
+## 💻 Usage Instructions
 
 ### **For Citizens:**
 
@@ -330,6 +238,58 @@ See [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) for complete Docker and cloud dep
 
 ---
 
+## 📸 Screenshots
+
+### 1. Submit Complaint Interface
+![Submit Complaint](https://via.placeholder.com/800x400?text=Submit+Complaint+Interface)
+*Citizens can submit complaints with automatic AI classification and priority detection*
+
+### 2. Analytics Dashboard
+![Dashboard](https://via.placeholder.com/800x400?text=Analytics+Dashboard)
+*Real-time analytics with interactive Plotly charts showing complaint trends*
+
+### 3. Track Complaint
+![Track Complaint](https://via.placeholder.com/800x400?text=Track+Complaint)
+*Citizens can track their complaints using ticket ID*
+
+### 4. Admin Panel
+![Admin Panel](https://via.placeholder.com/800x400?text=Admin+Panel)
+*Secure password-protected admin panel for complaint management*
+
+### 5. AI Classification Results
+![AI Results](https://via.placeholder.com/800x400?text=AI+Classification+Results)
+*Automatic categorization, priority assignment, and department routing*
+
+### 6. PDF Report Generation
+![PDF Report](https://via.placeholder.com/800x400?text=PDF+Report)
+*Auto-generated PDF reports with ticket ID and complaint details*
+
+---
+
+## 📁 Project Structure
+
+```
+GFGBQ-Team-techno_guys/
+├── app.py                      # Main Streamlit application
+├── database.py                 # SQLite database operations
+├── utils.py                    # Helper functions (priority, sentiment, etc.)
+├── report_generator.py         # PDF generation and email notifications
+├── train_model.py              # ML model training script
+├── requirements.txt            # Python dependencies
+├── README.md                   # Project documentation
+├── DEPLOYMENT_GUIDE.md         # Complete deployment instructions
+├── DATABASE_ANALYSIS.md        # Database schema documentation
+├── PRESENTATION_SLIDES.txt     # Hackathon presentation content
+├── data/
+│   ├── cleaned_data.csv        # Training dataset (500+ complaints)
+│   └── grievances.db           # SQLite database (auto-created)
+└── model/
+    ├── classifier.pkl          # Trained ML model
+    └── model_metadata.json     # Model performance metrics
+```
+
+---
+
 ## 📊 ML Model Performance
 
 ### **Best Model: Voting Ensemble Classifier**
@@ -346,7 +306,6 @@ See [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) for complete Docker and cloud dep
 | Naive Bayes | 61.18% | Very Fast |
 | Linear SVM | 67.06% | Fast |
 | **Voting Ensemble** | **69.41%** | Moderate |
-| Stacking Ensemble | 68.24% | Slow |
 
 ### **Feature Engineering:**
 - **TF-IDF Parameters:**
@@ -358,12 +317,12 @@ See [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) for complete Docker and cloud dep
   - Smooth IDF: True
 
 ### **Categories Supported:**
-1. Administration (Government delays, documentation)
-2. Healthcare (Hospitals, medical services)
-3. Infrastructure (Roads, buildings, facilities)
-4. Public Safety (Police, fire, security)
-5. Sanitation (Waste, cleanliness, hygiene)
-6. Utilities (Electricity, water, gas)
+1. 🏢 Administration (Government delays, documentation, tax issues)
+2. 🏥 Healthcare (Hospitals, medical services, ambulance)
+3. 🏗️ Infrastructure (Roads, buildings, facilities)
+4. 👮 Public Safety (Police, fire, security, crime)
+5. 🚰 Sanitation (Waste, cleanliness, drainage, hygiene)
+6. ⚡ Utilities (Electricity, water, gas, power)
 
 ---
 
@@ -378,15 +337,6 @@ See [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) for complete Docker and cloud dep
 4. Save and restart application
 
 **For Production:** Use environment variables (see DEPLOYMENT_GUIDE.md)
-
----
-
-## 📚 Documentation
-
-- **README.md** - This file (project overview and setup)
-- **[DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md)** - Complete deployment instructions (Local, Cloud, Docker)
-- **[DATABASE_ANALYSIS.md](DATABASE_ANALYSIS.md)** - Database schema and structure
-- **[FUTURE_ERROR_ANALYSIS.md](FUTURE_ERROR_ANALYSIS.md)** - Error prevention and compatibility fixes
 
 ---
 
@@ -426,6 +376,52 @@ For more troubleshooting, see [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md)
 
 ---
 
+## 🚀 Deployment Options
+
+### **1. Local Deployment**
+```bash
+streamlit run app.py
+```
+Access at: http://localhost:8501
+
+### **2. Streamlit Cloud (Current Deployment)**
+**Live URL:** https://smartgov-ai.streamlit.app/
+
+### **3. Docker**
+```bash
+docker build -t grievance-app .
+docker run -p 8501:8501 grievance-app
+```
+
+### **4. Production Server**
+- Use Nginx as reverse proxy
+- Configure SSL with Let's Encrypt
+- Set up domain name
+- Enable HTTPS
+
+**Full deployment instructions:** [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md)
+
+---
+
+## 📈 Future Enhancements
+
+### **Phase 2:**
+- 🌐 Multi-language support (Hindi, regional languages)
+- 📱 Mobile app (iOS/Android)
+- 🔔 SMS/Email notifications
+- 📸 Image upload for complaints
+- 🗺️ GIS mapping for location-based issues
+
+### **Phase 3:**
+- 🤖 Advanced NLP (BERT, Transformers for 85%+ accuracy)
+- 📊 Predictive analytics
+- 💬 Chatbot integration
+- 🔗 Government portal API integration
+- ☁️ Advanced cloud deployment (AWS/Azure)
+- 📈 Business Intelligence dashboards
+
+---
+
 ## 🎯 Features Checklist
 
 - [x] Multi-model ML training with ensemble methods
@@ -447,39 +443,11 @@ For more troubleshooting, see [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md)
 - [x] Status updates (Pending/In Progress/Resolved)
 - [x] CSV export functionality
 - [x] Mobile-responsive design
-- [x] All deprecation warnings fixed
-- [x] Future compatibility ensured
+- [x] Anonymous submission option
+- [x] Help section with instructions
+- [x] Enhanced dashboard with comprehensive metrics
+- [x] Deployed on Streamlit Cloud
 - [x] Complete deployment documentation
-
----
-
-## 🚀 Deployment Options
-
-### **1. Local Deployment**
-```bash
-streamlit run app.py
-```
-Access at: http://localhost:8501
-
-### **2. Streamlit Cloud**
-1. Push code to GitHub
-2. Go to https://streamlit.io/cloud
-3. Deploy from your repository
-4. Configure secrets for admin password
-
-### **3. Docker**
-```bash
-docker build -t grievance-app .
-docker run -p 8501:8501 grievance-app
-```
-
-### **4. Production Server**
-- Use Nginx as reverse proxy
-- Configure SSL with Let's Encrypt
-- Set up domain name
-- Enable HTTPS
-
-**Full deployment instructions:** [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md)
 
 ---
 
@@ -488,6 +456,7 @@ docker run -p 8501:8501 grievance-app
 **Team:** techno_guys  
 **Repository:** https://github.com/ByteQuest-2025/GFGBQ-Team-techno_guys  
 **Branch:** Debasis  
+**Live App:** https://smartgov-ai.streamlit.app/  
 **Admin Password:** `admin123`
 
 ### **Project Files:**
@@ -496,12 +465,6 @@ docker run -p 8501:8501 grievance-app
 - Utilities: `utils.py`
 - PDF Generator: `report_generator.py`
 - Model Training: `train_model.py`
-
----
-
-## 📝 License
-
-This project is developed for ByteQuest Hackathon 2025.
 
 ---
 
@@ -516,6 +479,12 @@ This project is developed for ByteQuest Hackathon 2025.
 
 ---
 
+## 📝 License
+
+This project is developed for ByteQuest Hackathon 2025.
+
+---
+
 ## ✅ Production Readiness
 
 - ✅ All errors fixed and tested
@@ -527,87 +496,14 @@ This project is developed for ByteQuest Hackathon 2025.
 - ✅ Comprehensive documentation
 - ✅ Deployment guides included
 - ✅ Code quality verified
-- ✅ Ready for merge to main branch
+- ✅ **Deployed on Streamlit Cloud**
+- ✅ Ready for hackathon presentation
 
 ---
 
 **🎉 Ready for Production Deployment and Hackathon Presentation! 🎉**
 
-1. Open your browser and navigate to <http://localhost:8501>
-2. Enter a grievance in the text area (e.g., "Garbage not collected for 7 days")
-3. Click the "Analyze Complaint" button
-4. The AI system will:
-   - Classify the grievance into a category (Sanitation, Healthcare, Infrastructure, etc.)
-   - Determine the priority level (Critical or Normal) based on keywords
-   - Assign it to the relevant department
-
-## 🧠 How It Work
-
-The system uses a machine learning pipeline with:
-- **TF-IDF Vectorizer**: Converts text complaints into numerical features
-- **Logistic Regression**: Classifies complaints into categories
-- Trained on labeled grievance data
-
-### Priority Detection (`utils.py`)
-
-Keywords are analyzed to determine urgency:
-- **Critical**: Contains words like "accident", "emergency", "hospital", "fire", "danger", "life", "death"
-- **Normal**: All other complaints
-
-### Department Routing (`utils.py`)
-
-Each category is mapped to the appropriate department:
-- Sanitation → Municipal Sanitation Department
-- Utilities → Electricity / Water Department
-- Healthcare → Health Department
-- Public Safety → Police Department
-- Infrastructure → Public Works Department
-- Administration → District Administration
-
-## � Project Structure
-
-```
-grievance_ai_project/
-├── app.py                      # Streamlit web application
-├── train_model.py              # Model training script
-├── utils.py                    # Helper functions (priority & department mapping)
-├── verify_setup.py             # Setup verification script
-├── requirements.txt            # Python dependencies
-├── README.md                   # Project documentation
-├── DATA_PREPARATION_GUIDE.md   # Data preparation instructions
-├── data/
-│   ├── cleaned_data.csv        # Training dataset
-│   └── sample_cleaned_data.csv # Sample data (if available)
-└── model/
-    └── classifier.pkl          # Trained model (generated after training)
-```
-
-## 📸 Screenshots
-
-- Grievance Submission Interface  
-- AI Classification & Priority Output  
-- Department Assignment
-
-(Add screenshots as needed)
-
-## 📈 Future Enhancements
-
-- Enhanced ML models (Random Forest, Gradient Boosting, or Deep Learning)
-- Multilingual grievance support (Hindi and regional languages)  
-- Voice-based complaint submission (speech-to-text)  
-- Real-time dashboard for monitoring grievances
-- SLA tracking and escalation alerts  
-- Analytics dashboard for governance insights  
-- Mobile app integration
-- Integration with government grievance portals
-
-## 🏆 Hackathon Value Proposition
-
-- Reduces grievance resolution time  
-- Improves transparency and accountability  
-- Scalable for city, state, and national deployments  
-- AI-first approach aligned with Digital India initiatives
-
-## 🙌 Thank You
-
-This project demonstrates how AI can make grievance redressal faster, smarter, and citizen-centric.
+**Repository:** https://github.com/ByteQuest-2025/GFGBQ-Team-techno_guys  
+**Live Demo:** https://smartgov-ai.streamlit.app/  
+**Team:** techno_guys  
+**ByteQuest Hackathon 2025** | Problem Statement PS-12
