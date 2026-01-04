@@ -146,7 +146,7 @@ def predict_category(text):
         return "Administrative"
     try:
         return model.predict([text])[0]
-    except:
+    except Exception:
         return "Administrative"
 
 # ================= TABS =================
