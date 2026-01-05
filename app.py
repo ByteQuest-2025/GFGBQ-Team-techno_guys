@@ -142,12 +142,12 @@ def load_model():
 model = load_model()
 
 def predict_category(text):
-    if model:
-        try:
-            return model.predict([text])[0]
-        except:
-            return "Administrative"
-    return "Administrative"
+    if not model:
+        return "Administrative"
+    try:
+        return model.predict([text])[0]
+    except Exception:
+        return "Administrative"
 
 # ================= TABS =================
 tabs = st.tabs([
